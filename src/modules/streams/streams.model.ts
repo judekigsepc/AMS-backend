@@ -6,7 +6,7 @@ interface IStream {
    name: string
 }
 
-const streamSchema = new Schema<IStream>({
+const StreamSchema = new Schema<IStream>({
     name : {
         type: String,
         required: true,
@@ -14,6 +14,6 @@ const streamSchema = new Schema<IStream>({
     }
 })
 
-const Stream = mongoose.model("Stream", streamSchema)
+const Stream = mongoose.model("Stream", StreamSchema)
 
 export default Stream
